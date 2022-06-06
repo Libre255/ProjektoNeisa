@@ -1,17 +1,17 @@
 import type { NextPage } from 'next'
-
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home/Home.module.css';
 
 interface Props{
   testerino:string;
 }
 const Home: NextPage<Props> = ({testerino}) => {
   return (
-    <>
+    <div className={`${styles.HomePage} container-fluid`}>
       
-      <p>{testerino}</p>
-      <h1>Hello Neisa</h1>
-    </>
+      <div className="container mt-6">
+        <h1>Hjälp oss att hjälpa</h1>
+      </div>
+    </div>
   )
 }
 

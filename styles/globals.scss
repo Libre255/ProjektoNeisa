@@ -1,0 +1,30 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: grey;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+$custom-spacers:(
+    6:$spacers * 3.5,
+    7:$spacers * 4,
+    8:$spacers * 5,
+    9:$spacers * 6,
+    10:$spacers * 7,
+    11:$spacers * 8,
+    12:$spacers * 9
+);
+
+$spacers: map-merge($spacers, $custom-spacers);
